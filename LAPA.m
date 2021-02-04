@@ -28,6 +28,7 @@ for i = 1:loops
         end    
     end
    
+   V = imboxfilt(V,3);
    V(:,1)=bcOnes;
    V(:,Y)=bcOnes;
    V(1,:) = bcZeros;
